@@ -361,13 +361,13 @@ p {
   fill: currentColor;
 }
 
-.card-icon:hover {
-}
-
 .background-icon {
+  display: flex;
   border-radius: 50%;
-  padding: 12px;
-
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
   color: var(--icons-color);
   background-color: var(--primary-background-color);
 }
@@ -494,7 +494,10 @@ p {
   display: flex;
   background-color: #ffffff10;
   border-radius: 50%;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-icon {
