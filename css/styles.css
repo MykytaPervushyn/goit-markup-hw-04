@@ -393,8 +393,9 @@ p {
 }
 
 .client-link {
-  display: inline-block;
-  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-background-color);
   fill: var(--icons-color);
   width: 170px;
@@ -410,9 +411,10 @@ p {
   align-self: center;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   fill: var(--accent-color);
-  border-color: transparent;
+  border-color: var(--accent-color);
 }
 
 .client:hover {
@@ -422,6 +424,7 @@ p {
 
 .footer > .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-blocks {
@@ -466,9 +469,10 @@ p {
 }
 
 .join {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--primary-background-color);
@@ -591,7 +595,7 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .projects-list .description {
